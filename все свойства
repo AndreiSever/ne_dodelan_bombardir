@@ -132,8 +132,38 @@ text-indent: 20 px - Отступ первой строки текста (% то
 line-height: 20px - Высота строки. Междустрочный интервал (Высота строки - размер шрифта)
 letter-spacing: 2 px - расстояние между символами
 word-spacing: 5px - расстояние между словами
+
+list-style-type - Типы нумерации списка ul и ol
+list-style-position : outside - Вложенность списков
+list-style-position : inside
+list-style-image : url('images/primer.png')
+
+border-width
+border-style: none - стиль границы
+border-style: hidden
+border-style: dotted - Точечная граница
+border-style: dashed - Пунктирная граница
+border-style: solid - Сплошная граница
+border-style: double - Двойная граница
+border-style: groove - с 3d эффектом
+border-style: ridge - с 3d эффектом
+border-style: inset - с 3d эффектом
+border-style: outset - с 3d эффектом
+border-color
+border: 4px solid orange
+border-radius:
+border-top-left-radius
+box-shadow - Тень для элемента. Не стал разбираться
+box-sizing: border-box - Меня модель счета пикселей. Включается border и padding. Особенно если ВАЖНО inline-block 
+box-sizing: content-box; /* ширина и высота элемента включают в себя только содержание элемента (по умолчанию)
+overflow: visible - по умолчанию
+overflow: hidden - Переполнение обрезается
+overflow: scroll - Переполнение обрезается, но добавляется полоса прокрутки
+overflow: auto - Если переполнение обрезается, то полоса прокрутки будет добавлена автоматически
+vertical-align: top; /* верх элемента выравнивается по верху самого высокого элемента в строке (вертикальное позиционирование) */
 margin: 5px - внешние отступы со всех сторон
 
+display: block;
 display: inline-block - строчный блочный контейнер
 display: flex - блочный флекс контейнер, флекс элементы только дочерние. Внутри дочерних не флекс элементы
 display: inline-flex - строчный флекс контейнер, обычные встроенные элементы, сохраняя гибкость
