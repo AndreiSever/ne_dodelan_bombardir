@@ -1,0 +1,177 @@
+div > div {
+	width: 50px; /* ширина элемента */
+	height: 50px; /* высота элемента */
+	border: 3px solid rgb(0,150,208); /* сплошная граница размером 3 пикселя */
+	margin: 5px; /* внешние отступы со всех сторон */
+}
+div > div {
+	width: 30%; /* ширина элемента */
+	background: rgb(0,150,208); /* цвет заднего фона */
+	color: #fff; /* цвет текста */
+	margin: 1px; /* внешние отступы со всех сторон */
+}
+.container,
+.container2
+{   
+	display: flex; /* блочные флекс контейнеры */
+	height: 200px; /* высота контейнера */
+	background: rgba(0,0,0,.4); /* цвет заднего фона */
+}
+
+div > div:nth-of-type(1) { /* выбираем первый <div> в каждом контейнере */ 
+	background: orange; /* цвет заднего фона */
+	font-size: 30px; /* размер шрифта */
+}
+div > div:nth-of-type(2) { /* выбираем второй <div> в каждом контейнере */ 
+	background: tan; /* цвет заднего фона */
+	font-size: 20px; /* размер шрифта */
+	} 
+div > div:nth-of-type(3) { /* выбираем третий <div> в каждом контейнере */ 
+	background: rgb(0,150,208); /* цвет заднего фона */
+	font-size: 15px; /* размер шрифта */
+}
+
+.container div:nth-of-type(4) { /* выбираем четвертый <div> в первом контейнере */ 
+	order: -1;  /* определяем порядок следования флекс элемента */
+	background: violet;  /* цвет заднего фона */ 
+}
+.container2 div:nth-of-type(4) { /* выбираем четвертый <div> во втором контейнере */ 
+	order: 1;  /* определяем порядок следования флекс элемента */
+	background: violet;  /* цвет заднего фона */ 
+}
+.container3 div:nth-of-type(4) { /* выбираем четвертый <div> в третьем контейнере */ 
+	order: 2;  /* определяем порядок следования флекс элемента */
+	background: violet;  /* цвет заднего фона */ 
+}
+
+.container,
+.container2,
+.container3 {     
+	display: flex; /* блочные флекс контейнеры */
+}
+.container {       
+	flex-wrap: nowrap; /* однострочный флекс контейнер (по умолчанию) */
+}
+.container2 {     
+	flex-wrap: wrap; /* многострочный флекс контейнер */
+}
+.container3 {     
+	flex-wrap: wrap-reverse; /* многострочный флекс контейнер (формирование строк идёт в обратном порядке)*/
+}
+.content {    
+	display: flex;  /* элемент отображается как блочный флекс контейнер */
+	height: calc(100vh - 200px);  /* высчитываем высоту для элемента */
+	background: #999;  /* цвет заднего фона */
+}
+
+z-index: auto - по порядку в DOM. Порядок по оси Z. Наложение элементов друг на друга. 
+z-index: 2 - число
+z-index: inline - в значение по умолчанию
+z-index: inherit - наследует значение от родительского элемента
+position: relative - Относительное позиционирование. Отрицательное значение влево, положительно вправо.
+left: 200px - смещает вправо относительно текущего места
+position: absolute - смещает относительного левого края предка. Значение должно быть отличное от Static
+left: 200px
+position: fixed - смещается от окна браузера
+left: 200px
+position: static - по умолчанию. значение left не повлияет.
+font-size: 20 px - Размер шрифта
+margin: 5px - внешние отступы со всех сторон
+
+display: flex - блочный флекс контейнер, флекс элементы только дочерние. Внутри дочерних не флекс элементы
+display: inline-flex - строчный флекс контейнер, обычные встроенные элементы, сохраняя гибкость
+flex-direction - указать направление для элементов внутри. Главная ось - горизонтальная, поперечная -вертикальная
+flex-direction:  row - по умолчанию слева-направо
+flex-direction: column  - сверху - вниз
+flex-direction: row-reverse - справа - налево
+flex-direction: column-reverse - снизу вверх
+flex-wrap: nowrap - однострочный контейнер
+flex-wrap: wrap - многострочный, элемент перескакивает на вторую строку. слева - направо
+flex-wrap: wrap-reverse - многострочный. справа налево
+flex-flow: "flex-direction flex-wrap"; - отображает два свойства сразу и направление, и многострочность
+flex-flow: row-reverse wrap-reverse
+justify-content: flex-start - Горизонтальное выравнивание. Распределяет пространство между и вокруг элементов 
+                            по умолчанию. слева-направо. Работает когда явно указана ширина элементов и есть место
+justify-content: flex-end - справа-налево
+justify-content: center - выравнивание по центру
+justify-content: space-between - равномерно распределяются по все строке
+justify-content: space-around - равномерно распределяются, но пустое пространство перед первым и последним равно половине
+align-content: stretch - Вертикальное выравнивание. Работает только при свойстве flex-wrap: wrap. 
+                        Строки равномерно растягиваются. Распределяет пространство между и вокруг элементов
+align-content: flex-start - Строки сверху
+align-content: flex-end - Строки снизу
+align-content: center - По центру
+align-content: space-between - Распределяются равномерно. Сверху и снизу
+align-content: space-around - Между двумя строками одинаковое, но перед первым и после последнего равно половине
+align-content: evenly - Равномерно все
+align-items: stretch - Выравнивание по высоте строки. аналог justify-content, но вертикально. 
+                    Растягиваются по размеру контейнера
+align-items: flex-start - распалагаются вначале контейнера 
+align-items: flex-end - распалагаются вконце контейнера
+align-items: center - по центру контейнера
+align-items: baseline - элементы распалагаются по их базовой линии
+order: -1 - Задает порядок элементов горизонтально или вертикально. Значение любое. Это просто значение.
+align-self: stretch - переопределяет align-items. Выравнивает по вертикали 1 элемент.
+align-self: auto - Берет значение родительского элемента. Растягивается по размеру строки.
+align-self: flex-start - начало строки
+align-self: flex-end - конец строки
+align-self: center - по центру строки
+align-self: baseline - по базовой линии строки
+flex-grow: 2 - Относительная ширина.Элемент будет увеличен в два раза по отношению к остальным элементам
+flex-basis: 200px - Размер по умолчанию перед распределением flex-grow. Не может выйти за пределы родителя. 
+                    Если произошло - уменьшится. (ШИРИНА или высота учитывается???)
+flex-shrink: 2 - на сколько будет уменьшена ширина блока по отношению к остальным
+flex - Универсальная установка значений по умолчанию, если одна переменная:
+flex: 2 - то flex-grow
+flex: 20px - то flex-basis
+flex: 1 1 100px - то grow|shrink|basis
+
+@media
+@font-face - правило позволяет сайт скачать и использовать шрифты
+@keyframes - контроль промежуточных этапов анимации
+@import - импорт css файла
+and, not, only, "," - Логические операторы для медиа запроса
+media type:
+- all - для всех 
+- print - печатные страницы
+- screen - экраны компьютера
+- speech  - речь
+Функции:
+- aspect-ratio - соотношение пикселей по горизонтали и вертикали
+- max-aspect-ratio
+- min-aspect-ratio
+- grid - выходное устройство на сеточной системе
+- height - Задает высоту области просмотра
+- max-height
+- min-height
+- width
+- max-width
+- min-width
+- orientation: landscape
+- orientation: portrait
+@media not | only mediatype and (media function) {
+  ...код CSS
+}
+// Small devices (landscape phones, минимальная ширина области просмотра 576px и выше)
+@media (min-width: 576px) { ...код CSS }
+
+// Medium devices (tablets, минимальная ширина области просмотра 768px и выше)
+@media (min-width: 768px) { ...код CSS }
+
+// Large devices (desktops, минимальная ширина области просмотра 992px и выше)
+@media (min-width: 992px) { ...код CSS }
+
+// Extra large devices (large desktops, минимальная ширина области просмотра 1200px и выше)
+@media (min-width: 1200px) { ...код CSS }
+
+// Extra small devices (portrait phones, максимальная ширина области просмотра 576px и ниже)
+@media (max-width: 575.98px) { ...код CSS }
+
+// Small devices (landscape phones, максимальная ширина области просмотра 768px и ниже)
+@media (max-width: 767.98px) { ...код CSS }
+
+// Medium devices (tablets, максимальная ширина области просмотра 992px и ниже)
+@media (max-width: 991.98px) { ...код CSS }
+
+// Large devices (desktops, максимальная ширина области просмотра 1200px и ниже)
+@media (max-width: 1199.98px) { ...код CSS }

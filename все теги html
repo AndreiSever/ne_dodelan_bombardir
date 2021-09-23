@@ -1,0 +1,8 @@
+<meta name = "viewport" content = "width=device-width, initial-scale = 1"> 
+name = "viewport" - начальный размер просмотра. Content - задает значение для этого атрибута
+content = "width=device-width, initial-scale = 1" - ширина страницы устанавливает от размера окна
+height=device-height
+initial-scale=1 соотношение пикселей 1 к 1 для всех устройств
+minimum-scale минимальное значение zoom от 0-10
+maximum-scale максимальное значение zoom от 0-10
+user-scalable - может ли пользователь увеличивать  масштаб
