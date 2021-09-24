@@ -1,8 +1,9 @@
-div > div {
-	width: 50px; /* ширина элемента */
-	height: 50px; /* высота элемента */
-	border: 3px solid rgb(0,150,208); /* сплошная граница размером 3 пикселя */
-	margin: 5px; /* внешние отступы со всех сторон */
+input[type=text] {
+width: 20%; /* ширина элемента */
+transition: width 500ms ease-in-out; /* описываем переходный эффект (свойство, продолжительность и функция) */
+}
+input[type=text]:focus {
+width: 40%; /* ширина элемента при фокусе на элементе */
 }
 div > div {  -  Берет только дочерние div (второй уровень), а не все вложенные
 	width: 30%; /* ширина элемента */
@@ -79,11 +80,20 @@ z-index: inline - в значение по умолчанию
 z-index: inherit - наследует значение от родительского элемента
 position: relative - Относительное позиционирование. Отрицательное значение влево, положительно вправо.
 left: 200px - смещает вправо относительно текущего места
-position: absolute - смещает относительного левого края предка. Значение должно быть отличное от Static
+position: absolute - смещает относительного левого края предка. Значение должно быть отличное от Static.
+	Тоесть если родитель static, а предок relative, то сдвигает от его уже границ
 left: 200px
-position: fixed - смещается от окна браузера
+position: fixed - смещается от окна браузера и при прокрутке страницы остается на месте
 left: 200px
-position: static - по умолчанию. значение left не повлияет.
+position: static - по умолчанию. значение left не повлияет. Только static может быть плавающим.
+float: left - элемент становится плавающим и смещается влево
+float: right - элемент смещается вправо
+float: none - по умолчанию в порядке DOM
+clear: none - Объект разрешает обтекание с обеих сторон
+clear: left - слева
+clear: right - справа
+clear: both - не разрешает обтекание с обеих сторон
+
 Tag::after{  - После элемента. Все селекторы.
     content:
 }
@@ -97,9 +107,12 @@ img[alt] - выбор атрибутом alt у элемента
 input[type=password]:focus { /* выбираем элемент <input>, атрибут type которого имеет значение password и который находится в фокусе */
 border: 1px solid green; /* устанавливаем сплошную границу размером 1 пиксель зеленого цвета */
 } 
+tr:hover:not(:first-child)  - не подсвечивает первую строку, кроме остальных 
+td:hover:after {} -после наведение добавляет контент и выделяет столбец
 :first-child
 :last-child
 h2:nth-child(3) - Селектор по номеру
+td:nth-child(4n+2) {} - Селектор по формуле, выбираем каждый четвертый элемент, начиная со второго 
 .primer1 tr:nth-child(even) - Выбирает все четные
 .primer2 tr:nth-child(odd) - Выбирает все нечетные
 .test p:first-of-type - первый элемент определенного типа
@@ -116,6 +129,8 @@ text-transform: none - Регистр
 text-transform: capitalize - Преобразует первые символы каждого слова в верхний регистр
 text-transform: uppercase - Преобразует все символы в верхний регистр
 text-transform: lowercase - Преобразует все символы в нижний регистр.
+text-align: left - горизонтальное выравнивание текста
+vertical-align: middle - вертикальное выравнивание текста
 font-variant - строчные знаки выглядят как уменьшенные заглавные буквы
 color: brown; /* устанавливаем цвет текста */
 font-weight: bold; /* устанавливаем жирное начертание шрифта */
@@ -132,6 +147,7 @@ text-indent: 20 px - Отступ первой строки текста (% то
 line-height: 20px - Высота строки. Междустрочный интервал (Высота строки - размер шрифта)
 letter-spacing: 2 px - расстояние между символами
 word-spacing: 5px - расстояние между словами
+word-wrap: break-word - слово может быть прерванно
 
 list-style-type - Типы нумерации списка ul и ol
 list-style-position : outside - Вложенность списков
@@ -150,7 +166,7 @@ border-style: ridge - с 3d эффектом
 border-style: inset - с 3d эффектом
 border-style: outset - с 3d эффектом
 border-color
-border: 4px solid orange
+border: 4px solid orange - универсальное свойство.
 border-radius:
 border-top-left-radius
 box-shadow - Тень для элемента. Не стал разбираться
@@ -161,7 +177,80 @@ overflow: hidden - Переполнение обрезается
 overflow: scroll - Переполнение обрезается, но добавляется полоса прокрутки
 overflow: auto - Если переполнение обрезается, то полоса прокрутки будет добавлена автоматически
 vertical-align: top; /* верх элемента выравнивается по верху самого высокого элемента в строке (вертикальное позиционирование) */
+
+background-image: url(omages/main.png) - задает картинку. Путь относительно css файла
+background-color: white
+background-repeat: repeat - Повтор фонового изображения
+background-repeat: repeat-x
+background-repeat: repeat-y
+background-repeat: no-repeat
+background-position: - задает позицию картинки. Можно словами, x y (10px,10px или 10%, 10%)
+background-attachment: fixed - Фиксирует фон, при прокрутке он не последует
+background-attachment: scroll
+background-attachment: local
+background-origin: padding-box - фон позиционируется от верхнего левого угла элемента
+background-origin: border-box - фон позиционируется от верхнего левого угла элемента
+background-origin: content-box - фон позиционируется от верхнего левого угла содержимого элемента
+background-clip: border-box - определяет ту область для которой будет задан фон
+background-clip: padding-box
+background-clip: content-box
+background-size: auto - размер фона
+background-size: length - ширину и высоту
+background-size: %
+background-size: cover - масштабирует под размеры элемента. Части фона могут быть скрыты
+background-size: contain - масштабирует, уменьшает фон под размеры элемента
+background: color image position/size repeat origin clip attachment - универсальное, можно поместить все свойства
+background: url('lis.png') top/contain no-repeat, url('cat_g.jpg') bottom/cover no-repeat; 
+background: white url('cat_g.jpg') bottom/cover no-repeat;
+background-image: linear-gradient(orange, black) - градиент идет по прямой от одного элемента к другому с разными цветами
+background-image: linear-gradient(to left, rgba(255,0,0,.4), #999) - градиент размещает справа 
+
+-webkit-свойство: значение - для старых браузеров Chrome Opera Safari
+-moz-свойство: значение - Firefox
+-o-свойство: значение - Opera
+-ms-свойство: значение - Internet Explorer
+
+Для таблицы
+border-spacing - Удаляет промежутки между ячейками
+border-collapse - отображение границ ячеек
+empty-cells: show - отображает пустые ячейки
+empty-cells: hide
+caption-side: top - заголовок таблицы сверху
+caption-side: bottom 
+table-layout: fixed - фиксированные не считывает всю таблицу, показывает ее быстрее 
+
+transition-duration: 1.5s - время необходимое для плавного изменения цвета. Можно использовать селектор :hover
+							Не забудь просто в div указать это же свойство для возвращения цвета
+transition-duration: 2s, 4s, 6s - указывает время для каждого свойство
+transition-property: background-color, border-color, color - указывает имя свойства для которого идет переход
+transition-delay: 2s - Задержка при перед переходом
+transition-timing-function: ease - регулирует скорость в различные промежутки эффекта. 
+							Если значений больше кол-ва свойств, то по кругу идут
+transition-timing-function: linear
+transition-timing-function: ease-in
+transition-timing-function: ease-out
+transition-timing-function: ease-in-out
+transition-timing-function:cubic-bezier 0.5,0.05,0.7,0.5)
+transition-timing-function: steps(int,start|end)
+transition-timing-function: step-start
+transition-timing-function: step-end
+transition:"property duration timing-function delay"
+
+transform - применяет к элементу двухмерные и трех мерные функции. Может быть несколько через запятую
+transform: perspective(500px) rotateX(45deg) scale3d(1,2,1)
+transform: skew(20deg,30deg) - двухмерный Наклон  относительно оси X и Y. deg - это градусы
+transform: skewX(25deg) - только по Х
+transform: skewY(25deg) - только по У
+transform: rotate(45deg) - поворот по часовой стрелке или против
+transform: rotateX()
+transform: rotateY()
+transform: rotateZ()
+transform: rotate3d(2,1,0, 50deg)
+transform:scale(0.5) - Масштабирование элементов. для обеих осей 0.5. По аналогии scaleX(), scaleY() и scaleZ()
+transform:scale(0.5, 0.8)
+transform: perspective() - перспектива обзора элемента
 margin: 5px - внешние отступы со всех сторон
+margin: 2% 10%
 
 display: block;
 display: inline-block - строчный блочный контейнер
