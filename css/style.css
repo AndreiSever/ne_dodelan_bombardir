@@ -1,0 +1,39 @@
+main {
+    width: 1440px;
+    height: 5902px;
+}
+.page1 {
+    background-image: url(../image/frame2.png);
+
+    width: 100%;
+    height: 15.15%;
+
+}
+.header {
+    width: 79.03%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.email{
+    width: 231px;
+}
+.phone{
+    width: 218px ;
+}
+.white_text{
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.whate_text small{
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
