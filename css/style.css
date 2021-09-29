@@ -51,8 +51,8 @@ main{
 .page1 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-content: flex-start;
     background: url(../image/frame1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,6 @@ main{
 .text_1 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
 
     width: 1002px; 
@@ -113,11 +112,13 @@ main{
     line-height: 88px;
 }
 .bigtext {
+    margin-top: 30px;
     width: 1002px;
     font-size: 40px;
     line-height: 49px;
 }
 .smalltext {
+    margin-top: 25px;
     width: 416px;   
     font-size: 14px;
     line-height: 17px;
@@ -131,28 +132,76 @@ main{
     letter-spacing: 0em;
     text-align: left;
 }
-.skidki {
-    border: 1px solid #E5E5E5;
-    box-sizing: border-box;
-    box-shadow: 9px 0 0 0 #FFFFFF,-9px 0 0 0 #FFFFFF,0 9px 0 0 #FFFFFF,0 -9px 0 0 #FFFFFF,0 10px 0 -5px #FFFFFF;
-
-  
-
- 
-    width: 253px;
-    height: 133px;
-    background: #FFFFFF;
-    /*box-shadow: 0px 4px 4px 0px #00000017;*/
+.main_doub_bord{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 262px;
+}
+.double_border {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    width: 262px;
+    height: 132px;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    /*outline: solid 4px #E5E5E5;*/
+}
+.back_border2{
 
+    float: center;
+    width: 244px;
+    height:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+.back_border1{
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #E5E5E5;
+    width: 244px;
+    height:110px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 .information {
-    margin: 40px;
+    margin-top: 40px;
     display: inline-flex;
     justify-content: space-between;
-    width: 1179px;
+    width: 926px;
 }
+.back_border1 > div {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+
+}
+.bus{
+    width: 105px;
+    height: 69px;
+}
+.sale{
+    width: 78px;
+    height: 25px;
+}
+.money{
+    width: 78px;
+    height: 74px;
+}
+
 .page2 {
     background: url(../image/Frame2.png);
     background-repeat: no-repeat;
