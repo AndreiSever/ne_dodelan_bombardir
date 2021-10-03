@@ -57,7 +57,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 894px;
+    height: auto;
 
 }
 #text_1 {
@@ -208,9 +208,10 @@ main{
 #section_button{
     display: flex;
     justify-content: center;
-    height: 91px;
+    height: auto;
     width: 1000px;
     margin-top: 70px;
+    margin-bottom:74px;
 }
 .img_button{
     padding-right: 13px;
@@ -237,6 +238,7 @@ main{
     box-shadow: 0 6px 0 0 #06004D;
     width: 415px;
     height: 65px;
+    
 }
 .call_button:hover{
     background:linear-gradient(360deg,#AD5CFF 0%,#1000C6 100%)
@@ -259,12 +261,12 @@ main{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: flex-start;;
+    align-content: flex-start;
     background: url(../image/Frame2.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 861px;
+    height: auto;
 }
 #header_2{
     display:flex;
@@ -312,55 +314,44 @@ main{
     -3px  3px 0   #FF6302,
     3px   3px 0   #FF6302;
 }
-#information_2{
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    margin-top: 55.86px;
-}
-#information_2 .main_doub_bord{
-    width: 701px;
-    height: 160px;
-}
-#information_2 .double_border{
-    width: 701px;
-    height: 149px;
-}
-#information_2  .back_border1{
-    justify-content: center;
-    width: 679px;
-    height: 126px;
-}
-#information_2  .back_border2{
-    width: 679px;
-}
-#information_2 .black_text{
-    text-align: center;
-    width: 554px;  
-    line-height: 24px;
-}
 #products{
-    width: 1140px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.row{
+    --bs-gutter-x:0px ;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    margin-top: 40px;
+}
+#products > .row:nth-of-type(1) {
+    /*width:100%;*/
+    margin-bottom:27px;
 }
 .product{
+    width: 230px;
+    height: 142px;
     
 }
 #products .white_text{
     float:left;
+    font-size: 20px;
     line-height: 24px;
     display:inline;
+    word-wrap: break-word;
 }
 .img_prod{
-    float:right;
+    float:left;
+    width:120px;
+    height:120px;
+    padding-left:10px;
 }
-/*.img_prod img
+.img_prod img{
+    width:100%;
+    height: 100%;
     
-    
-}*/
+}
 #products .border_text{
     padding: 0 0 0 0;
     font-family: Montserrat;
@@ -370,7 +361,7 @@ main{
     line-height: 88px;
     color: #FFFFFF;
     float:left;
-    width: 77px;
+    width: auto;
     text-shadow:
     -0  -3px  0   #FF6302,
     0   -3px  0   #FF6302,
@@ -388,4 +379,95 @@ main{
     3px  -3px 0   #FF6302,
     -3px  3px 0   #FF6302,
     3px   3px 0   #FF6302;
+}
+#information_2{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-top: 55.86px;
+    margin-bottom: 60px;
+}
+#information_2 .main_doub_bord{
+    width: auto;
+    height: auto;
+}
+#information_2 .double_border{
+    width: 701px;
+    height: 149px;
+}
+#information_2  .back_border1{
+    justify-content: center;
+    width: 679px;
+    height: 126px;
+}
+#information_2  .back_border2{
+    width: 679px;
+}
+#information_2 .black_text{
+    color:#000000;
+    text-align: center;
+    width: 554px;  
+    font-size:20px;
+    line-height: 24px;
+}
+#rocket {
+    position: absolute;
+    left:240px;
+    top: 1450.3px;
+    
+    width:220px;
+    height:246px;
+    background: url(../image/rocket.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 2;
+}
+#page_3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    background: url(../image/frame3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: auto;
+    height: auto;
+}
+#form_price{
+    margin-right: 200px;
+
+    margin-top: 86px;
+    margin-bottom: 76px;
+
+}
+#form_price .main_doub_bord{
+    width: 458px;
+    height: 563px;
+}
+#form_price .double_border{
+    width: 458px;
+    height: 548px;
+}
+#form_price  .back_border1{
+    display: block;
+    width: 438px;
+    height: 524px;
+}
+#form_price .back_border2{
+    width: 443px;
+    height:14.64px;
+}
+#form_price .orange_text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FF6302;
+    text-align: center;
+    width: 272px;  
+    
+}
+#form_price form{
+    
 }
