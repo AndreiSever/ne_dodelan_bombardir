@@ -57,7 +57,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: auto;
+    height: 894px;
 
 }
 #text_1 {
@@ -243,18 +243,10 @@ main{
 .call_button:hover{
     background:linear-gradient(360deg,#AD5CFF 0%,#1000C6 100%)
 }
-.call_button:active:before,
-.call_button:active:after{
-    border: none;
-    box-shadow: none;
-}
+
 .call_button:active{
     border: none;
-    bottom: -4px;
-    margin-bottom: 22px;/* ХЗ зачем нужно*/
-
-    box-shadow: inset 0 1px 15px -1px #06004D ;
-
+    box-shadow: inset 0 1px 10px -1px #06004D ;
 }
 
 #page2 {
@@ -470,4 +462,20 @@ main{
 }
 #form_price form{
     
+}
+#input_email{
+    width:100%;
+    height:50px;
+}
+#input_phone{
+    width:100%;
+    height:50px;
+}
+#form_price .call_button{
+    justify-content: center;
+}
+#form_price .white_text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 }
