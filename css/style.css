@@ -479,3 +479,10 @@ main{
     font-weight: 500;
     line-height: 22px;
 }
+#form_price .form-group{
+    margin-top: 20px;
+
+}
+.orange_text{
+    margin-bottom: 30px;
+}

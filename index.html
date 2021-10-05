@@ -8,7 +8,7 @@
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Raleway:wght@400;500;600;800&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
     <script src="js/custom.js"></script>
     <!--<link rel="icon" type="image/png" href="icons/email.png">
     <link rel="image" type="image/png" href="image/bomleft.png">
@@ -193,18 +193,18 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="phone">Введите ваш телефон</label>
-                                        <input type="tel" class="form-control" id="input_phone">
+                                        <input type="tel" class="form-control" id="input_phone" placeholder="_-___-___-__-__">
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="call_button"><span class="white_text">Скачать прайс-лист</span></button>  
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                        <label class="form-check-label" for="exampleCheck1">Я ознакомлен и принимаю политику конфиденциальности</label>
+                                        <input class="form-check-input" type="checkbox" id="politics" value="agree">
+                                        <label class="form-check-label" for="politics">Я ознакомлен и принимаю политику конфиденциальности</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                        <label class="form-check-label" for="exampleCheck1">Я хочу получать SMS-уведомления</label>
+                                        <input class="form-check-input" type="checkbox" id="sms" value="agree">
+                                        <label class="form-check-label" for="sms">Я хочу получать SMS-уведомления</label>
                                     </div>
                                 </fieldset>
                             </form>
