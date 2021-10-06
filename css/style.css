@@ -57,7 +57,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 894px;
+    height: auto;
 
 }
 #text_1 {
@@ -421,13 +421,13 @@ main{
     align-content: flex-start;
     background: url(../image/frame3.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     width: auto;
     height: auto;
 }
 #form_price{
     margin-right: 200px;
-
+    z-index: 3;
     margin-top: 86px;
     margin-bottom: 76px;
 
@@ -525,12 +525,27 @@ main{
 #form_price .form-check:nth-of-type(4){
     margin-top: 20px;
 }
+#section_book{
+    position:relative;
+}
 #book {
     position:absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+    /*height:1000px;
+    width: 1000px;*/
     width:796.8px;
     height:626.94px;
-    background: url(images/book.png);
+    background: url(../image/book.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#page_4{
+    width:auto;
+    height: 1616px;
+    z-index: 1;
+    background: url(../image/frame4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
