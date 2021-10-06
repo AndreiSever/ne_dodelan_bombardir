@@ -449,6 +449,10 @@ main{
     width: 443px;
     height:14.64px;
 }
+#form_price form{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 #form_price .orange_text{
     font-family: Montserrat;
     font-style: normal;
@@ -456,13 +460,12 @@ main{
     font-size: 24px;
     line-height: 32px;
     color: #FF6302;
-    text-align: center;
-    width: 272px;  
-    
+    width: 272px; 
+    margin-top: 38.74px;
+    margin-left: 53.39px;  
+    margin-bottom: 0px;;
 }
-#form_price form{
-    
-}
+
 #input_email{
     width:100%;
     height:50px;
@@ -473,16 +476,61 @@ main{
 }
 #form_price .call_button{
     justify-content: center;
+    margin-top: 30px;
+    width:100%;
+    height: 71px;
 }
 #form_price .white_text{
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
 }
-#form_price .form-group{
-    margin-top: 20px;
+#form_price .form-group:nth-of-type(1){
+    padding-top:30px;
 
 }
-.orange_text{
-    margin-bottom: 30px;
+#form_price .form-group:nth-of-type(2){
+    margin-top: 20px;
 }
+#form_price .black_text{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+#form_price .form-check{
+    margin-left: 20px;
+    
+}
+.form-check-input{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.form-check-input:checked {
+    background-color: #130081;
+    border-color: #130081;  
+}
+.form-check-input:not(:checked):hover{
+    border: 1px solid black;
+  }
+  .form-check-input:checked:focus {
+    box-shadow: none; 
+  }
+  .form-check-input:not(:checked):focus {
+    box-shadow: none; 
+    border: 1px solid rgba(0, 0, 0, 0.25);  
+  }
+  .form-check-input:not(:checked):active {  
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);  
+  }
+#form_price .form-check:nth-of-type(4){
+    margin-top: 20px;
+}
+#book {
+    position:absolute;
+    width:796.8px;
+    height:626.94px;
+    background: url(images/book.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
