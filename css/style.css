@@ -133,7 +133,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
     width: 262px;
     height: 132px;
@@ -348,7 +348,7 @@ main{
     padding: 0 0 0 0;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 72px;
     line-height: 88px;
     color: #FFFFFF;
@@ -416,10 +416,10 @@ main{
 }
 #page_3{
     display:flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-content: flex-start;
     background: url(../image/frame3.png);
+    position:relative;
+    z-index:2;
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -427,7 +427,7 @@ main{
 }
 #form_price{
     margin-right: 200px;
-    z-index: 3;
+    z-index: 2;
     margin-top: 86px;
     margin-bottom: 76px;
 
@@ -447,13 +447,13 @@ main{
 }
 #form_price .back_border2{
     width: 443px;
-    height:14.64px;
+    height:15px;
 }
 #form_price form{
     padding-left: 30px;
     padding-right: 30px;
 }
-#form_price .orange_text{
+.orange_text{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -527,25 +527,121 @@ main{
 }
 #section_book{
     position:relative;
+    float:left;
+    z-index:2;
 }
 #book {
     position:absolute;
-    left: 100px;
-    top: 100px;
-    z-index: 2;
-    /*height:1000px;
-    width: 1000px;*/
+    left: 95px;
+    top: 108px;
     width:796.8px;
-    height:626.94px;
+    height:670px;
+    
     background: url(../image/book.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+#section_book .white_text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    width: 189px;
+    height: auto;
+}
+
+#circle_youtube {
+    z-index: 3;
+    position:absolute;   
+    left: 200px;
+    top: 104px;
+}
+#circle_clock{
+    z-index: 3;
+    position:absolute;
+    left: 400px;
+    top: 70px;
+}
+
+.purple_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C55814;
+    border: 5px solid #130080;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 19px rgba(16, 0, 198, 0.28);
+    border-radius: 35px;
+    width: 69px;
+    height: 69px;
+}
+#clock{
+
+    width: 36px;
+    height: 36px;
+    background: url(../image/clock.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#youtube{
+    width: 32px;
+    height: 32px;
+    background: url(../image/youtube.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book .white_text:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    width:auto;
+    margin-bottom: 0px;
+}
+#book .white_text:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    width:auto;
+    margin-bottom: 0px;
+}
+#category{
+    position: absolute;
+    width:97px;
+    left: 294px;
+    top:135px;
+}
 #page_4{
     width:auto;
-    height: 1616px;
-    z-index: 1;
+    height: auto;
     background: url(../image/frame4.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#header_4{
+    display:flex;
+    justify-content:center;
+}
+#header_4 .white_text{
+    padding-left:488px;
+    padding-right:488px;
+    margin-top:100px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+
+}
+#header_4 .white_text span{
+    color: #FF6302;
+}
+#choice_buyer .double_border{
+    width: 360px;
+    height: 132px;
+}
+#choice_buyer .back_border1{
+    width: 335px;
+    height: 111px;
 }
