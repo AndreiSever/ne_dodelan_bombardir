@@ -211,22 +211,22 @@ main{
     margin-bottom:74px;
 }
 .img_button{
-    padding-right: 13px;
-    padding-bottom: 23px;
-    box-sizing: border-box;
     
+    box-sizing: border-box;
+    margin-bottom: 23px;
 }
 .text_button{
-    width:275px;
+    margin-top: 2px;
     font-size: 18px;
     line-height: 22px;
-    text-align: right;
     text-decoration: none;
-    
+    text-align: right;
+    margin-right: 18px;
 }
 .call_button{
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background: linear-gradient(360deg, #1000C6 0%, #AD5CFF 100%);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -708,12 +708,78 @@ main{
 #slider_4{
     margin-top:174px;
     width: 674px;
+    
+    overflow: hidden;
     height:211px;
+    position: relative;
+    
+}
+#slider .white_text{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+}
+#slider_4 .swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+#slider_4 .swiper-slide {
+    text-align: left;
+    height: 88px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#slider_4 .swiper-slide img {
+    display: block;
+    margin-right: 26px;
+    width: 64px;
+    height: 94px;
+    object-fit: cover;
+}
+
+#slider_4 .swiper-pagination-bullet {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border: 1px solid #FF6302;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    opacity: 1;
+    background: none;
+}
+
+#slider_4 .swiper-pagination-bullet-active {
+    background: #FF6302;
+    border: none;
 }
 #section_button_4{
     margin-top:65px;
     margin-bottom: 87px;
     display: flex;
     justify-content: center;
+    
     width:1000px;
 }
