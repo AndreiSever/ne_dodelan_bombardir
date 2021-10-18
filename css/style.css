@@ -211,17 +211,23 @@ main{
     margin-bottom:74px;
 }
 .img_button{
-    
+    width: 94px;
+    height: 75px;
+    margin-left: 5px;    
     box-sizing: border-box;
     margin-bottom: 23px;
 }
+
 .text_button{
     margin-top: 2px;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     text-align: right;
-    margin-right: 18px;
+    margin-right: 14px;
+}
+#section_button .img_button{
+    margin-left: 28px;
 }
 .call_button{
     
@@ -371,6 +377,7 @@ main{
 #information_2{
     display: flex;
     justify-content: center;
+    position: relative;
     width: 1000px;
     margin-top: 55.86px;
     margin-bottom: 60px;
@@ -399,14 +406,14 @@ main{
 }
 #rocket {
     position: absolute;
-    left:240px;
-    top: 1450.3px;
-    
-    width:220px;
-    height:246px;
+    left:85px;
+    top: -25px;
+    transform: rotate(-45deg);
+    width: 157.5px;
+    height: 246.6px;
     background: url(../image/rocket.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     z-index: 2;
 }
 #page_3{
@@ -458,7 +465,8 @@ main{
     width: 272px; 
     margin-top: 38.74px;
     margin-left: 53.39px;  
-    margin-bottom: 0px;;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 #input_email{
@@ -756,7 +764,7 @@ main{
 #slider_4 .swiper-pagination-bullet {
     width: 35px;
     height: 35px;
-    padding-top: 5px;
+    padding-top: 4px;
     border: 1px solid #FF6302;
     font-family: Montserrat;
     font-size: 20px;
@@ -779,7 +787,46 @@ main{
     margin-top:65px;
     margin-bottom: 87px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
     width:1000px;
 }
+#page_5{
+    display:flex;
+    justify-content:center;
+    width:auto;
+    height: auto;
+    background: url(../image/frame5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#two_lines{
+    margin-top: 75px;
+    margin-bottom: 77px;
+}
+#page_5 .main_doub_bord{
+    width: 945px;
+    height: 658px;
+}
+#page_5 .double_border{
+    width: 945px;
+    height: 640px;
+}
+#page_5 .back_border1{
+    align-items: flex-start;
+    justify-content: center;
+    width: 915px;
+    height: 610px;
+}
+#page_5 .back_border2{
+    width: 915px;
+    height: 18px;
+}
+#page_5 .black_text{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+/*#section_button_4 img{
+    margin-left: 28px;
+}*/
