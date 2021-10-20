@@ -26,7 +26,7 @@
     
     }
 }*/
-
+/*///////////////////// СТИЛИ ДЛЯ ВСЕХ ЭЛЕМЕНТОВ //////////////////////////////*/
 body {
     /*display: block;
     margin: auto;*/
@@ -44,7 +44,7 @@ main{
     padding-right:0px;
 }
 
-
+/*///////////////////// PAGE 1 //////////////////////////////*/
 #page1 {
     display: flex;
     flex-wrap: wrap;
@@ -251,7 +251,7 @@ main{
     border: none;
     box-shadow: inset 0 1px 10px -1px #06004D ;
 }
-
+/*///////////////////// PAGE 2 //////////////////////////////*/
 #page2 {
     display:flex;
     flex-wrap: wrap;
@@ -416,6 +416,7 @@ main{
     background-size: cover;
     z-index: 2;
 }
+/*///////////////////// PAGE 3 //////////////////////////////*/
 #page_3{
     display:flex;
     justify-content: space-between;
@@ -616,6 +617,7 @@ main{
     left: 294px;
     top:135px;
 }
+/*///////////////////// PAGE 4 //////////////////////////////*/
 #page_4{
     display:flex;
     justify-content:center;
@@ -790,6 +792,7 @@ main{
     justify-content: center; 
     width:1000px;
 }
+/*///////////////////// PAGE 5 //////////////////////////////*/
 #page_5{
     display:flex;
     justify-content:center;
@@ -826,7 +829,49 @@ main{
     font-weight: 600;
     line-height: 32px;
 }
+#page_5 .form-group .black_text:nth-of-type(1){
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+#page_5 .form-group .black_text:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+#page_5 .background_orange{
+    width: 131px;
+    height: 38px;
+    background: #FF6302;
+    border: 1px solid #FF6302;
+    box-sizing: border-box;
+}
 
-/*#section_button_4 img{
-    margin-left: 28px;
-}*/
+#page_5 .white_text{
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+#page_5 .form-group:nth-of-type(1)>div, #page_5 .form-group:nth-of-type(2)>div{
+    display: flex;
+}
+#page_5 .form-group:nth-of-type(3)>div{
+    display: flex;
+    justify-content: space-between;
+}
+#page_5 .form-group:nth-of-type(4)>div{
+    display: flex;
+    justify-content: space-between;
+}
+#page_5 .form-group:nth-of-type(4) .background_orange{
+    width: 131px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #FF6302;
+    box-sizing: border-box;
+}
+#page_5 .form-group:nth-of-type(4)>div:nth-of-type(1)>div{
+    display: inline-flex;
+    
+}
